@@ -211,7 +211,8 @@ Syntax: SELECT * FROM table_name WHERE column_name (SELECT name FROM table2)
 ```
 ---
 
-### Consider the following database, where promary key are underlined 
+##Question
+### Consider the following database, where primary key are underlined 
 teacher(tid, tname, qualification) </br>
 teaches(tid, cid) </br>
 course(cid, cname, ccode) </br>
