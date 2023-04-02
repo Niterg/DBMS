@@ -220,3 +220,27 @@ Write the RA and SQL Query query for the following
 1. Find the names of all teachers who have Phd Qualification.
 2. Find the name of all course taught by Ram Prasad.
 3. Find the total number of course taught bt Ram Prasad. 
+
+---
+## View in SQL
+1. View is a Virtual table that used with `SELECT` Query to make retrieval more easier.
+2. It can be created by selecting fields from one or more tables present in the database.
+3. A view can either specific rows based on certain condition or entire rows.
+```sql
+Syntax:
+      -- 1. To create View
+      CREATE View View_Name as
+      SELECT Col1, Col2, ...
+      FROM table_name
+      WHERE <condition>;
+
+      -- 2. To REMOVE View
+      DROP View View_Name;
+```
+### View Update Condition
+
+1. If data is selected form single table only than only records in view is updated and the updated field is reflected in main base table.
+2. If the record is selected from multiple table then record of view is not updatable.
+3. If the record is selected using `aggregate_function, having clause, group by clause` then also view record is not updatable.
+
+---
